@@ -13,7 +13,6 @@
 
 #include "logging.h"
 #include "ns.h"
-#include "util.h"
 
 #define DIAG_SERVICE 4097
 
