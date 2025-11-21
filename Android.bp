@@ -12,22 +12,6 @@ cc_library {
 }
 
 cc_binary {
-    name: "qrtr-ns",
-    vendor: true,
-    srcs: [
-        "lib/logging.c",
-        "src/addr.c",
-        "src/ns.c",
-        "src/map.c",
-        "src/hash.c",
-        "src/waiter.c",
-        "src/util.c",
-    ],
-    cflags: ["-Wno-error"],
-    local_include_dirs: ["lib"],
-}
-
-cc_binary {
     name: "qrtr-cfg",
     vendor: true,
     srcs: [
@@ -45,7 +29,6 @@ cc_binary {
     srcs: [
         "lib/logging.c",
         "src/lookup.c",
-        "src/util.c",
     ],
     cflags: ["-Wno-error"],
     local_include_dirs: ["lib"],

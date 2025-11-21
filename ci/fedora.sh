@@ -20,8 +20,6 @@ dnf -y install \
 	meson \
 	pkg-config \
 	libudev-devel \
-	systemd-devel \
-	systemd-libs \
 	$PKGS_CC
 
 echo "Install finished: $0"

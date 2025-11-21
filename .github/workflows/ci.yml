@@ -52,20 +52,17 @@ jobs:
           #- ubuntu:xenial
         cross_compile: [""]
         variant: [""]
-        nosystemd: [""]
         include:
           # Alpine (OpenRC)
           - container: "alpine:edge"
             arch: x86-64
             family: x86-64
             compiler: gcc
-            nosystemd: true
 
           - container: "alpine:latest"
             arch: x86-64
             family: x86-64
             compiler: gcc
-            nosystemd: true
 
           # Debian 32-bit builds
           - container: "debian:testing"
@@ -218,7 +215,6 @@ jobs:
     - name: Meson init with cross compile
       if: ${{ matrix.variant == 'cross-compile' }}
       run: |
-        # installing systemd (for pkg-config) has personality issues with cross-compilation
         # Generate cross compile file (see https://mesonbuild.com/Cross-compilation.html#cross-compilation)
         echo "[binaries]" > cross.txt
         echo "c = '${CROSS_COMPILE}-gcc'" >> cross.txt

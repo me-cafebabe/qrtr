@@ -22,7 +22,4 @@ apt install -y --no-install-recommends \
 	libc6-dev:${ARCH} \
 	gcc-`dpkg-architecture -a ${ARCH} -q DEB_TARGET_GNU_TYPE`
 
-# Thanks debian
-apt install -y --no-install-recommends systemd-dev:${ARCH} -a ${ARCH} || true
-
 echo "Install finished: $0"

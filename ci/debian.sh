@@ -30,11 +30,7 @@ esac
 apt install -y --no-install-recommends \
 	pkg-config \
 	meson \
-	systemd \
 	libc6-dev \
 	$PKGS_CC
-
-# Thanks debian
-apt install -y --no-install-recommends systemd-dev || true
 
 echo "Install finished: $0"
