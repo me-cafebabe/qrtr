@@ -1,8 +1,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 cfg_srcs = ['addr.c',
-            'cfg.c',
-            'hash.c']
+            'cfg.c']
 executable('qrtr-cfg',
            cfg_srcs,
            link_with : libqrtr,
