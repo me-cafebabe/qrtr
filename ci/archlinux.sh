@@ -17,7 +17,6 @@ case $CC in
 esac
 
 pacman -Syu --noconfirm \
-	systemd-libs \
 	pkgconf \
 	meson \
 	$PKGS_CC

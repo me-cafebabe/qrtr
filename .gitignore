@@ -2,4 +2,3 @@ out/
 *.so
 qrtr-cfg
 qrtr-lookup
-qrtr-ns
